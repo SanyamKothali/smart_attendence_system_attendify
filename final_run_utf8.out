@@ -1,0 +1,369 @@
+﻿
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.11)
+
+2026-03-09T17:15:45.632+05:30  INFO 15308 --- [register] [           main] c.e.a.RegisterApplication                : Starting RegisterApplication v0.0.1-SNAPSHOT using Java 21.0.2 with PID 15308 (F:\Attendify-padmnabham\Attendify-padmnabham\Attendify-Sanika\register\target\attendance_Backend-0.0.1-SNAPSHOT.jar started by Sanyam in F:\Attendify-padmnabham\Attendify-padmnabham\Attendify-Sanika\register)
+2026-03-09T17:15:45.640+05:30 DEBUG 15308 --- [register] [           main] c.e.a.RegisterApplication                : Running with Spring Boot v3.5.11, Spring v6.2.16
+2026-03-09T17:15:45.642+05:30  INFO 15308 --- [register] [           main] c.e.a.RegisterApplication                : No active profile set, falling back to 1 default profile: "default"
+2026-03-09T17:15:47.072+05:30  INFO 15308 --- [register] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-09T17:15:47.213+05:30  INFO 15308 --- [register] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128 ms. Found 17 JPA repository interfaces.
+2026-03-09T17:15:48.321+05:30  INFO 15308 --- [register] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-03-09T17:15:48.341+05:30  INFO 15308 --- [register] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-09T17:15:48.341+05:30  INFO 15308 --- [register] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-09T17:15:48.385+05:30  INFO 15308 --- [register] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-09T17:15:48.386+05:30  INFO 15308 --- [register] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2632 ms
+2026-03-09T17:15:48.502+05:30 DEBUG 15308 --- [register] [           main] c.e.a.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-03-09T17:15:48.503+05:30 DEBUG 15308 --- [register] [           main] c.e.a.config.RequestLoggingFilter        : Filter 'requestLoggingFilter' configured for use
+2026-03-09T17:15:48.766+05:30  INFO 15308 --- [register] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-09T17:15:48.873+05:30  INFO 15308 --- [register] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-03-09T17:15:48.949+05:30  INFO 15308 --- [register] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-09T17:15:49.632+05:30  INFO 15308 --- [register] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-09T17:15:49.717+05:30  INFO 15308 --- [register] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-09T17:15:50.300+05:30  INFO 15308 --- [register] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c79c5ec
+2026-03-09T17:15:50.303+05:30  INFO 15308 --- [register] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-09T17:15:50.451+05:30  INFO 15308 --- [register] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-09T17:15:52.223+05:30  INFO 15308 --- [register] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-09T17:15:52.648+05:30  INFO 15308 --- [register] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-09T17:15:53.399+05:30  INFO 15308 --- [register] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-09T17:15:55.358+05:30  WARN 15308 --- [register] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-09T17:15:55.419+05:30  WARN 15308 --- [register] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: dfc84207-eeab-41dc-a095-bedb3c1c02dc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-09T17:15:55.443+05:30  INFO 15308 --- [register] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-09T17:15:55.566+05:30  INFO 15308 --- [register] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-03-09T17:15:56.307+05:30  INFO 15308 --- [register] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-03-09T17:15:56.332+05:30  INFO 15308 --- [register] [           main] c.e.a.RegisterApplication                : Started RegisterApplication in 11.621 seconds (process running for 12.445)
+Checking for users with missing roles...
+Hibernate: select u1_0.id,u1_0.address,u1_0.admin_id,u1_0.class_id,u1_0.division_id,u1_0.email,u1_0.mobilenumber,u1_0.name,u1_0.password,u1_0.role,u1_0.roll_no from users u1_0
+No student roles needed fixing.
+Hibernate: select a1_0.id,a1_0.email,a1_0.name,a1_0.password,a1_0.school_code from admins a1_0 where a1_0.email=?
+Hibernate: select a1_0.id,a1_0.email,a1_0.name,a1_0.password,a1_0.school_code from admins a1_0 where a1_0.school_code=?
+?? School code MFNGVL is already assigned to another admin.
+Build successfully!!2026-03-09T17:17:13.162+05:30  INFO 15308 --- [register] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-09T17:17:13.164+05:30  INFO 15308 --- [register] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-09T17:17:13.167+05:30  INFO 15308 --- [register] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Incoming Request: GET /public/register.html
+Response Status: 200 for /public/register.html
+Incoming Request: GET /css/register.css
+Incoming Request: GET /js/register.js
+Response Status: 200 for /css/register.css
+Response Status: 200 for /js/register.js
+Incoming Request: POST /api/users/register
+Processing registration for: alex@gmail.com
+Registration using School Code: [MFNGVL]
+Hibernate: select a1_0.id,a1_0.email,a1_0.name,a1_0.password,a1_0.school_code from admins a1_0 where a1_0.school_code=?
+? Found admin for school code: kothali@gmail.com
+Hibernate: select u1_0.id,u1_0.address,u1_0.admin_id,u1_0.class_id,u1_0.division_id,u1_0.email,u1_0.mobilenumber,u1_0.name,u1_0.password,u1_0.role,u1_0.roll_no from users u1_0 where u1_0.email=?
+Hibernate: insert into users (address,admin_id,class_id,division_id,email,mobilenumber,name,password,role,roll_no) values (?,?,?,?,?,?,?,?,?,?)
+? Successfully registered student: alex@gmail.com
+Response Status: 200 for /api/users/register
+Incoming Request: GET /public/login.html
+Response Status: 200 for /public/login.html
+Incoming Request: GET /js/login.js
+Incoming Request: GET /css/login.css
+Response Status: 200 for /js/login.js
+Response Status: 200 for /css/login.css
+Incoming Request: POST /api/users/login
+Hibernate: select u1_0.id,u1_0.address,u1_0.admin_id,u1_0.class_id,u1_0.division_id,u1_0.email,u1_0.mobilenumber,u1_0.name,u1_0.password,u1_0.role,u1_0.roll_no from users u1_0 where u1_0.email=?
+Response Status: 200 for /api/users/login
+Incoming Request: GET /public/dashboard.html
+Response Status: 200 for /public/dashboard.html
+Incoming Request: GET /js/dashboard.js
+Incoming Request: GET /css/dashboard.css
+Response Status: 200 for /js/dashboard.js
+Response Status: 200 for /css/dashboard.css
+Incoming Request: GET /api/student/dashboard/3
+Incoming Request: GET /api/student/summary/subject/3
+Incoming Request: GET /api/attendance/check/3
+Incoming Request: GET /api/notes/student/3
+Incoming Request: GET /api/leave/student/3
+Incoming Request: GET /api/student/attendance/3
+Hibernate: select lr1_0.id,lr1_0.admin_id,lr1_0.class_name,lr1_0.from_date,lr1_0.reason,lr1_0.status,lr1_0.student_id,lr1_0.student_name,lr1_0.teacher_id,lr1_0.to_date from leave_request lr1_0 left join admins a1_0 on a1_0.id=lr1_0.admin_id where lr1_0.student_id=? and a1_0.id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.address,u1_0.admin_id,u1_0.class_id,u1_0.division_id,u1_0.email,u1_0.mobilenumber,u1_0.name,u1_0.password,u1_0.role,u1_0.roll_no from users u1_0 left join admins a1_0 on a1_0.id=u1_0.admin_id where u1_0.id=? and a1_0.id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 where a1_0.user_id=? and a1_0.admin_id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=? and a1_0.status=?
+Hibernate: select n1_0.id,n1_0.admin_id,n1_0.class_master_id,n1_0.department_id,n1_0.division_master_id,n1_0.file_name,n1_0.file_path,n1_0.file_url,n1_0.subject,n1_0.upload_time from notes n1_0 left join admins a1_0 on a1_0.id=n1_0.admin_id where a1_0.id=?
+Response Status: 200 for /api/leave/student/3
+Response Status: 200 for /api/attendance/check/3
+Hibernate: select a1_0.date,sm1_0.subject_name,a1_0.status from attendance a1_0 join subject_master sm1_0 on sm1_0.id=a1_0.subject_id where a1_0.user_id=? and a1_0.admin_id=?
+Response Status: 200 for /api/notes/student/3
+Incoming Request: GET /api/master/classes
+Response Status: 200 for /api/student/attendance/3
+Incoming Request: GET /api/attendance/check/3
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=?
+Hibernate: select cm1_0.id,cm1_0.admin_id,cm1_0.class_name,cm1_0.department_id from class_master cm1_0 left join admins a1_0 on a1_0.id=cm1_0.admin_id where a1_0.id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 where a1_0.user_id=? and lower(a1_0.status)='present' and a1_0.admin_id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=? and a1_0.status=?
+Response Status: 200 for /api/attendance/check/3
+Hibernate: select sm1_0.subject_name,sum(case when lower(a1_0.status)='present' then 1 else 0 end),count(a1_0.id) from attendance a1_0 join subject_master sm1_0 on sm1_0.id=a1_0.subject_id where a1_0.user_id=? and a1_0.admin_id=? group by sm1_0.subject_name
+Response Status: 200 for /api/student/summary/subject/3
+Response Status: 200 for /api/master/classes
+Hibernate: select count(a1_0.id) from attendance a1_0 where a1_0.user_id=? and lower(a1_0.status)='absent' and a1_0.admin_id=?
+Response Status: 200 for /api/student/dashboard/3
+Incoming Request: GET /api/settings
+Hibernate: select s1_0.id,s1_0.admin_id,s1_0.attendance_threshold,s1_0.auto_mark_absent_minutes,s1_0.late_arrival_minutes,s1_0.manual_override,s1_0.send_alerts from setting s1_0 left join admins a1_0 on a1_0.id=s1_0.admin_id where a1_0.id=?
+Response Status: 200 for /api/settings
+Incoming Request: GET /public/dashboard.html
+Response Status: 200 for /public/dashboard.html
+Incoming Request: GET /css/dashboard.css
+Incoming Request: GET /js/dashboard.js
+Response Status: 200 for /css/dashboard.css
+Response Status: 200 for /js/dashboard.js
+Incoming Request: GET /api/student/dashboard/3
+Incoming Request: GET /api/student/attendance/3
+Incoming Request: GET /api/student/summary/subject/3
+Incoming Request: GET /api/notes/student/3
+Hibernate: select sm1_0.subject_name,sum(case when lower(a1_0.status)='present' then 1 else 0 end),count(a1_0.id) from attendance a1_0 join subject_master sm1_0 on sm1_0.id=a1_0.subject_id where a1_0.user_id=? and a1_0.admin_id=? group by sm1_0.subject_name
+Hibernate: select count(a1_0.id) from attendance a1_0 where a1_0.user_id=? and a1_0.admin_id=?
+Hibernate: select a1_0.date,sm1_0.subject_name,a1_0.status from attendance a1_0 join subject_master sm1_0 on sm1_0.id=a1_0.subject_id where a1_0.user_id=? and a1_0.admin_id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 where a1_0.user_id=? and lower(a1_0.status)='present' and a1_0.admin_id=?
+Response Status: 200 for /api/student/summary/subject/3
+Hibernate: select count(a1_0.id) from attendance a1_0 where a1_0.user_id=? and lower(a1_0.status)='absent' and a1_0.admin_id=?
+Hibernate: select u1_0.id,u1_0.address,u1_0.admin_id,u1_0.class_id,u1_0.division_id,u1_0.email,u1_0.mobilenumber,u1_0.name,u1_0.password,u1_0.role,u1_0.roll_no from users u1_0 left join admins a1_0 on a1_0.id=u1_0.admin_id where u1_0.id=? and a1_0.id=?
+Response Status: 200 for /api/student/attendance/3
+Response Status: 200 for /api/student/dashboard/3
+Incoming Request: GET /api/master/classes
+Incoming Request: GET /api/leave/student/3
+Incoming Request: GET /api/attendance/check/3
+Hibernate: select n1_0.id,n1_0.admin_id,n1_0.class_master_id,n1_0.department_id,n1_0.division_master_id,n1_0.file_name,n1_0.file_path,n1_0.file_url,n1_0.subject,n1_0.upload_time from notes n1_0 left join admins a1_0 on a1_0.id=n1_0.admin_id where a1_0.id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=?
+Hibernate: select lr1_0.id,lr1_0.admin_id,lr1_0.class_name,lr1_0.from_date,lr1_0.reason,lr1_0.status,lr1_0.student_id,lr1_0.student_name,lr1_0.teacher_id,lr1_0.to_date from leave_request lr1_0 left join admins a1_0 on a1_0.id=lr1_0.admin_id where lr1_0.student_id=? and a1_0.id=?
+Hibernate: select cm1_0.id,cm1_0.admin_id,cm1_0.class_name,cm1_0.department_id from class_master cm1_0 left join admins a1_0 on a1_0.id=cm1_0.admin_id where a1_0.id=?
+Response Status: 200 for /api/notes/student/3
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=? and a1_0.status=?
+Response Status: 200 for /api/attendance/check/3
+Response Status: 200 for /api/master/classes
+Response Status: 200 for /api/leave/student/3
+Incoming Request: GET /api/settings
+Incoming Request: GET /api/attendance/check/3
+Hibernate: select s1_0.id,s1_0.admin_id,s1_0.attendance_threshold,s1_0.auto_mark_absent_minutes,s1_0.late_arrival_minutes,s1_0.manual_override,s1_0.send_alerts from setting s1_0 left join admins a1_0 on a1_0.id=s1_0.admin_id where a1_0.id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=?
+Response Status: 200 for /api/settings
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=? and a1_0.status=?
+Response Status: 200 for /api/attendance/check/3
+Incoming Request: GET /public/dashboard.html
+Response Status: 200 for /public/dashboard.html
+Incoming Request: GET /css/dashboard.css
+Incoming Request: GET /js/dashboard.js
+Response Status: 200 for /css/dashboard.css
+Response Status: 200 for /js/dashboard.js
+Incoming Request: GET /api/student/dashboard/3
+Incoming Request: GET /api/student/summary/subject/3
+Incoming Request: GET /api/student/attendance/3
+Incoming Request: GET /api/notes/student/3
+Incoming Request: GET /api/leave/student/3
+Incoming Request: GET /api/attendance/check/3
+Hibernate: select count(a1_0.id) from attendance a1_0 where a1_0.user_id=? and a1_0.admin_id=?
+Hibernate: select a1_0.date,sm1_0.subject_name,a1_0.status from attendance a1_0 join subject_master sm1_0 on sm1_0.id=a1_0.subject_id where a1_0.user_id=? and a1_0.admin_id=?
+Hibernate: select sm1_0.subject_name,sum(case when lower(a1_0.status)='present' then 1 else 0 end),count(a1_0.id) from attendance a1_0 join subject_master sm1_0 on sm1_0.id=a1_0.subject_id where a1_0.user_id=? and a1_0.admin_id=? group by sm1_0.subject_name
+Response Status: 200 for /api/student/summary/subject/3
+Hibernate: select lr1_0.id,lr1_0.admin_id,lr1_0.class_name,lr1_0.from_date,lr1_0.reason,lr1_0.status,lr1_0.student_id,lr1_0.student_name,lr1_0.teacher_id,lr1_0.to_date from leave_request lr1_0 left join admins a1_0 on a1_0.id=lr1_0.admin_id where lr1_0.student_id=? and a1_0.id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=?
+Response Status: 200 for /api/student/attendance/3
+Hibernate: select count(a1_0.id) from attendance a1_0 where a1_0.user_id=? and lower(a1_0.status)='present' and a1_0.admin_id=?
+Hibernate: select u1_0.id,u1_0.address,u1_0.admin_id,u1_0.class_id,u1_0.division_id,u1_0.email,u1_0.mobilenumber,u1_0.name,u1_0.password,u1_0.role,u1_0.roll_no from users u1_0 left join admins a1_0 on a1_0.id=u1_0.admin_id where u1_0.id=? and a1_0.id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=? and a1_0.status=?
+Response Status: 200 for /api/leave/student/3
+Hibernate: select count(a1_0.id) from attendance a1_0 where a1_0.user_id=? and lower(a1_0.status)='absent' and a1_0.admin_id=?
+Response Status: 200 for /api/attendance/check/3
+Response Status: 200 for /api/student/dashboard/3
+Hibernate: select n1_0.id,n1_0.admin_id,n1_0.class_master_id,n1_0.department_id,n1_0.division_master_id,n1_0.file_name,n1_0.file_path,n1_0.file_url,n1_0.subject,n1_0.upload_time from notes n1_0 left join admins a1_0 on a1_0.id=n1_0.admin_id where a1_0.id=?
+Incoming Request: GET /api/master/classes
+Hibernate: select cm1_0.id,cm1_0.admin_id,cm1_0.class_name,cm1_0.department_id from class_master cm1_0 left join admins a1_0 on a1_0.id=cm1_0.admin_id where a1_0.id=?
+Response Status: 200 for /api/notes/student/3
+Incoming Request: GET /api/attendance/check/3
+Incoming Request: GET /api/settings
+Response Status: 200 for /api/master/classes
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=?
+Hibernate: select s1_0.id,s1_0.admin_id,s1_0.attendance_threshold,s1_0.auto_mark_absent_minutes,s1_0.late_arrival_minutes,s1_0.manual_override,s1_0.send_alerts from setting s1_0 left join admins a1_0 on a1_0.id=s1_0.admin_id where a1_0.id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=? and a1_0.status=?
+Response Status: 200 for /api/settings
+Response Status: 200 for /api/attendance/check/3
+Incoming Request: GET /public/dashboard.html
+Response Status: 200 for /public/dashboard.html
+Incoming Request: GET /css/dashboard.css
+Incoming Request: GET /js/dashboard.js
+Response Status: 200 for /css/dashboard.css
+Response Status: 200 for /js/dashboard.js
+Incoming Request: GET /api/student/dashboard/3
+Incoming Request: GET /api/student/attendance/3
+Incoming Request: GET /api/student/summary/subject/3
+Incoming Request: GET /api/leave/student/3
+Hibernate: select a1_0.date,sm1_0.subject_name,a1_0.status from attendance a1_0 join subject_master sm1_0 on sm1_0.id=a1_0.subject_id where a1_0.user_id=? and a1_0.admin_id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 where a1_0.user_id=? and a1_0.admin_id=?
+Incoming Request: GET /api/notes/student/3
+Hibernate: select sm1_0.subject_name,sum(case when lower(a1_0.status)='present' then 1 else 0 end),count(a1_0.id) from attendance a1_0 join subject_master sm1_0 on sm1_0.id=a1_0.subject_id where a1_0.user_id=? and a1_0.admin_id=? group by sm1_0.subject_name
+Incoming Request: GET /api/attendance/check/3
+Hibernate: select count(a1_0.id) from attendance a1_0 where a1_0.user_id=? and lower(a1_0.status)='present' and a1_0.admin_id=?
+Response Status: 200 for /api/student/summary/subject/3
+Response Status: 200 for /api/student/attendance/3
+Hibernate: select lr1_0.id,lr1_0.admin_id,lr1_0.class_name,lr1_0.from_date,lr1_0.reason,lr1_0.status,lr1_0.student_id,lr1_0.student_name,lr1_0.teacher_id,lr1_0.to_date from leave_request lr1_0 left join admins a1_0 on a1_0.id=lr1_0.admin_id where lr1_0.student_id=? and a1_0.id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 where a1_0.user_id=? and lower(a1_0.status)='absent' and a1_0.admin_id=?
+Hibernate: select u1_0.id,u1_0.address,u1_0.admin_id,u1_0.class_id,u1_0.division_id,u1_0.email,u1_0.mobilenumber,u1_0.name,u1_0.password,u1_0.role,u1_0.roll_no from users u1_0 left join admins a1_0 on a1_0.id=u1_0.admin_id where u1_0.id=? and a1_0.id=?
+Response Status: 200 for /api/leave/student/3
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=? and a1_0.status=?
+Incoming Request: GET /api/master/classes
+Response Status: 200 for /api/student/dashboard/3
+Hibernate: select n1_0.id,n1_0.admin_id,n1_0.class_master_id,n1_0.department_id,n1_0.division_master_id,n1_0.file_name,n1_0.file_path,n1_0.file_url,n1_0.subject,n1_0.upload_time from notes n1_0 left join admins a1_0 on a1_0.id=n1_0.admin_id where a1_0.id=?
+Response Status: 200 for /api/attendance/check/3
+Hibernate: select cm1_0.id,cm1_0.admin_id,cm1_0.class_name,cm1_0.department_id from class_master cm1_0 left join admins a1_0 on a1_0.id=cm1_0.admin_id where a1_0.id=?
+Response Status: 200 for /api/notes/student/3
+Incoming Request: GET /api/attendance/check/3
+Response Status: 200 for /api/master/classes
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=?
+Incoming Request: GET /api/settings
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=? and a1_0.status=?
+Hibernate: select s1_0.id,s1_0.admin_id,s1_0.attendance_threshold,s1_0.auto_mark_absent_minutes,s1_0.late_arrival_minutes,s1_0.manual_override,s1_0.send_alerts from setting s1_0 left join admins a1_0 on a1_0.id=s1_0.admin_id where a1_0.id=?
+Response Status: 200 for /api/attendance/check/3
+Response Status: 200 for /api/settings
+Incoming Request: GET /public/dashboard.html
+Response Status: 200 for /public/dashboard.html
+Incoming Request: GET /css/dashboard.css
+Incoming Request: GET /js/dashboard.js
+Response Status: 200 for /css/dashboard.css
+Response Status: 200 for /js/dashboard.js
+Incoming Request: GET /api/student/attendance/3
+Incoming Request: GET /api/leave/student/3
+Incoming Request: GET /api/notes/student/3
+Hibernate: select a1_0.date,sm1_0.subject_name,a1_0.status from attendance a1_0 join subject_master sm1_0 on sm1_0.id=a1_0.subject_id where a1_0.user_id=? and a1_0.admin_id=?
+Incoming Request: GET /api/attendance/check/3
+Incoming Request: GET /api/student/summary/subject/3
+Incoming Request: GET /api/student/dashboard/3
+Response Status: 200 for /api/student/attendance/3
+Hibernate: select sm1_0.subject_name,sum(case when lower(a1_0.status)='present' then 1 else 0 end),count(a1_0.id) from attendance a1_0 join subject_master sm1_0 on sm1_0.id=a1_0.subject_id where a1_0.user_id=? and a1_0.admin_id=? group by sm1_0.subject_name
+Hibernate: select lr1_0.id,lr1_0.admin_id,lr1_0.class_name,lr1_0.from_date,lr1_0.reason,lr1_0.status,lr1_0.student_id,lr1_0.student_name,lr1_0.teacher_id,lr1_0.to_date from leave_request lr1_0 left join admins a1_0 on a1_0.id=lr1_0.admin_id where lr1_0.student_id=? and a1_0.id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 where a1_0.user_id=? and a1_0.admin_id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=?
+Response Status: 200 for /api/leave/student/3
+Hibernate: select count(a1_0.id) from attendance a1_0 where a1_0.user_id=? and lower(a1_0.status)='present' and a1_0.admin_id=?
+Response Status: 200 for /api/student/summary/subject/3
+Hibernate: select u1_0.id,u1_0.address,u1_0.admin_id,u1_0.class_id,u1_0.division_id,u1_0.email,u1_0.mobilenumber,u1_0.name,u1_0.password,u1_0.role,u1_0.roll_no from users u1_0 left join admins a1_0 on a1_0.id=u1_0.admin_id where u1_0.id=? and a1_0.id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 where a1_0.user_id=? and lower(a1_0.status)='absent' and a1_0.admin_id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=? and a1_0.status=?
+Response Status: 200 for /api/student/dashboard/3
+Hibernate: select n1_0.id,n1_0.admin_id,n1_0.class_master_id,n1_0.department_id,n1_0.division_master_id,n1_0.file_name,n1_0.file_path,n1_0.file_url,n1_0.subject,n1_0.upload_time from notes n1_0 left join admins a1_0 on a1_0.id=n1_0.admin_id where a1_0.id=?
+Response Status: 200 for /api/notes/student/3
+Incoming Request: GET /api/master/classes
+Response Status: 200 for /api/attendance/check/3
+Hibernate: select cm1_0.id,cm1_0.admin_id,cm1_0.class_name,cm1_0.department_id from class_master cm1_0 left join admins a1_0 on a1_0.id=cm1_0.admin_id where a1_0.id=?
+Incoming Request: GET /api/attendance/check/3
+Response Status: 200 for /api/master/classes
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=?
+Incoming Request: GET /api/settings
+Hibernate: select s1_0.id,s1_0.admin_id,s1_0.attendance_threshold,s1_0.auto_mark_absent_minutes,s1_0.late_arrival_minutes,s1_0.manual_override,s1_0.send_alerts from setting s1_0 left join admins a1_0 on a1_0.id=s1_0.admin_id where a1_0.id=?
+Hibernate: select count(a1_0.id) from attendance a1_0 left join users u1_0 on u1_0.id=a1_0.user_id where u1_0.id=? and a1_0.status=?
+Response Status: 200 for /api/settings
+Response Status: 200 for /api/attendance/check/3
+Incoming Request: POST /api/teachers/login
+Hibernate: select t1_0.id,t1_0.admin_id,t1_0.department_id,t1_0.device_id,t1_0.email,t1_0.mobilenumber,t1_0.name,t1_0.password,t1_0.role from teachers t1_0 where t1_0.email=?
+Response Status: 200 for /api/teachers/login
+Incoming Request: GET /public/teacher-dashboard.html
+Response Status: 200 for /public/teacher-dashboard.html
+Incoming Request: GET /css/teacher-dashboard.css
+Incoming Request: GET /js/teacher-dashboard.js
+Response Status: 200 for /css/teacher-dashboard.css
+Response Status: 200 for /js/teacher-dashboard.js
+Incoming Request: GET /api/master/departments
+Incoming Request: GET /api/master/classes
+Incoming Request: GET /api/notes/all
+Incoming Request: GET /api/teachers/abc@gmail.com
+Incoming Request: GET /api/settings
+Response Status: 401 for /api/master/classes
+Response Status: 401 for /api/master/departments
+Response Status: 401 for /api/settings
+Incoming Request: GET /api/teacher/timetable/1/today
+Incoming Request: GET /api/teacher/timetable/1
+Incoming Request: GET /api/master/classes
+Response Status: 200 for /api/notes/all
+Response Status: 200 for /api/teacher/timetable/1/today
+Response Status: 200 for /api/teacher/timetable/1
+Response Status: 401 for /api/master/classes
+Hibernate: select t1_0.id,t1_0.admin_id,t1_0.department_id,t1_0.device_id,t1_0.email,t1_0.mobilenumber,t1_0.name,t1_0.password,t1_0.role from teachers t1_0 where t1_0.email=?
+Response Status: 200 for /api/teachers/abc@gmail.com
+Incoming Request: GET /api/attendance/teacher/student-list
+Incoming Request: GET /api/master/classes
+Response Status: 401 for /api/master/classes
+Incoming Request: GET /api/master/classes
+Response Status: 200 for /api/attendance/teacher/student-list
+Response Status: 401 for /api/master/classes
+Incoming Request: POST /api/attendance/add-student
+Response Status: 401 for /api/attendance/add-student
+Incoming Request: POST /api/attendance/manual
+Hibernate: select u1_0.id,u1_0.address,u1_0.admin_id,u1_0.class_id,u1_0.division_id,u1_0.email,u1_0.mobilenumber,u1_0.name,u1_0.password,u1_0.role,u1_0.roll_no from users u1_0 where u1_0.roll_no=?
+Response Status: 200 for /api/attendance/manual
+Incoming Request: GET /api/master/classes
+Incoming Request: GET /api/attendance/teacher/student-list
+Response Status: 401 for /api/master/classes
+Response Status: 200 for /api/attendance/teacher/student-list
+Incoming Request: GET /api/master/classes
+Incoming Request: GET /api/teacher/timetable/1/today
+Response Status: 401 for /api/master/classes
+Response Status: 200 for /api/teacher/timetable/1/today
+Incoming Request: GET /api/master/classes
+Incoming Request: GET /api/teachers/abc@gmail.com
+Response Status: 401 for /api/master/classes
+Hibernate: select t1_0.id,t1_0.admin_id,t1_0.department_id,t1_0.device_id,t1_0.email,t1_0.mobilenumber,t1_0.name,t1_0.password,t1_0.role from teachers t1_0 where t1_0.email=?
+Response Status: 200 for /api/teachers/abc@gmail.com
+Incoming Request: GET /api/master/classes
+Response Status: 401 for /api/master/classes
+Incoming Request: GET /api/master/classes
+Response Status: 401 for /api/master/classes
+Incoming Request: GET /api/master/classes
+Response Status: 401 for /api/master/classes
+Incoming Request: GET /api/attendance/reports/students
+Response Status: 200 for /api/attendance/reports/students
+Incoming Request: GET /api/master/classes
+Incoming Request: GET /api/attendance/teacher/student-list
+Response Status: 401 for /api/master/classes
+Response Status: 200 for /api/attendance/teacher/student-list
+Incoming Request: GET /api/master/classes
+Response Status: 401 for /api/master/classes
+Incoming Request: GET /api/master/classes
+Response Status: 401 for /api/master/classes
+Incoming Request: GET /api/master/classes
+Response Status: 401 for /api/master/classes
+Incoming Request: GET /api/master/classes
+Response Status: 401 for /api/master/classes
+Incoming Request: GET /api/attendance/reports/subjects
+Hibernate: select sm1_0.subject_name,sum(case when lower(a1_0.status)='present' then 1 else 0 end),count(a1_0.id) from attendance a1_0 join subject_master sm1_0 on sm1_0.id=a1_0.subject_id where a1_0.subject_id is not null group by sm1_0.subject_name
+Response Status: 200 for /api/attendance/reports/subjects
+Incoming Request: GET /api/attendance/reports/classes
+Hibernate: select cm1_0.class_name,sum(case when lower(a1_0.status)='present' then 1 else 0 end),count(a1_0.id) from attendance a1_0 join users u1_0 on u1_0.id=a1_0.user_id join class_master cm1_0 on cm1_0.id=u1_0.class_id where u1_0.class_id is not null group by cm1_0.class_name
+Response Status: 200 for /api/attendance/reports/classes
+Incoming Request: GET /api/master/classes
+Incoming Request: GET /api/teacher/timetable/1/today
+Response Status: 401 for /api/master/classes
+Response Status: 200 for /api/teacher/timetable/1/today
+Incoming Request: GET /api/teacher/timetable/structure
+Incoming Request: GET /api/master/classes
+Response Status: 401 for /api/master/classes
+Hibernate: select ts1_0.id,ts1_0.admin_id,ts1_0.end_time,ts1_0.label,ts1_0.slot_order,ts1_0.slot_type,ts1_0.start_time from timetable_structure ts1_0 order by ts1_0.slot_order
+Response Status: 200 for /api/teacher/timetable/structure
+Incoming Request: GET /api/teacher/timetable/1
+Response Status: 200 for /api/teacher/timetable/1
+Incoming Request: GET /api/master/departments
+Response Status: 401 for /api/master/departments
+Incoming Request: GET /api/master/departments
+Response Status: 401 for /api/master/departments
+Incoming Request: POST /api/master/departments
+Response Status: 401 for /api/master/departments
+Incoming Request: POST /api/master/departments
+Response Status: 401 for /api/master/departments
