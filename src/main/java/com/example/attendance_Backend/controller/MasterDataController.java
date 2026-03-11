@@ -74,7 +74,13 @@ public class MasterDataController {
         if (adminId == null)
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
 
-        if (departmentRepository.findByDepartmentNameAndAdminId(department.getDepartmentName(), adminId).isPresent()) {
+        String trimmedName = department.getDepartmentName() != null ? department.getDepartmentName().trim() : "";
+        if (trimmedName.isEmpty()) {
+            return ResponseEntity.badRequest().body("Department name cannot be empty.");
+        }
+        department.setDepartmentName(trimmedName);
+
+        if (departmentRepository.findByDepartmentNameIgnoreCaseAndAdminId(trimmedName, adminId).isPresent()) {
             return ResponseEntity.badRequest().body("Department with this name already exists in your organization.");
         }
 

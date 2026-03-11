@@ -445,8 +445,8 @@ public interface AttendanceRepository extends JpaRepository<Attendance, Integer>
                        SUM(CASE WHEN LOWER(a.status) = 'present' THEN 1L ELSE 0L END),
                        COUNT(a)
                 FROM Attendance a
-                WHERE a.classMaster.id = :classId
-                AND a.divisionMaster.id = :divisionId
+                WHERE a.user.classMaster.id = :classId
+                AND a.user.divisionMaster.id = :divisionId
                 AND MONTH(a.date) = :month
                 AND YEAR(a.date) = :year
                 AND a.user.role = 'STUDENT'
