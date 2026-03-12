@@ -1,20 +1,14 @@
 package com.example.attendance_Backend.config;
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")
-                .allowedOrigins("*")
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                .allowedHeaders("*");
-    }
+    // NOTE: CORS is handled by SecurityConfig via CorsConfigurationSource bean.
+    // Defining it here as well caused a conflict; Security-level CORS always wins.
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -23,3 +17,4 @@ public class WebConfig implements WebMvcConfigurer {
                 .addResourceLocations("file:uploads/");
     }
 }
+

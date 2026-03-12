@@ -12,13 +12,11 @@ import java.util.List;
 public class TeacherAttendanceService {
 
     private final AttendanceRepository repository;
-    private final AttendanceRepository attendanceRepository;
     private final SettingRepository settingRepository;
 
-    public TeacherAttendanceService(AttendanceRepository repository, AttendanceRepository attendanceRepository,
+    public TeacherAttendanceService(AttendanceRepository repository,
             SettingRepository settingRepository) {
         this.repository = repository;
-        this.attendanceRepository = attendanceRepository;
         this.settingRepository = settingRepository;
     }
 
@@ -32,8 +30,8 @@ public class TeacherAttendanceService {
 
     public String checkAttendanceAndNotify(int id) {
 
-        long totalClasses = attendanceRepository.countByUserId(id);
-        long presentClasses = attendanceRepository.countByUserIdAndStatus(id, "PRESENT");
+        long totalClasses = repository.countByUserId(id);
+        long presentClasses = repository.countByUserIdAndStatus(id, "PRESENT");
 
         if (totalClasses == 0) {
             return "No attendance records found.";

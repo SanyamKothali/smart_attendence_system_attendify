@@ -3,7 +3,9 @@ package com.example.attendance_Backend.service;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import com.example.attendance_Backend.model.Admin;
 import com.example.attendance_Backend.model.User;
@@ -35,22 +37,22 @@ public class UserService {
             Admin admin = adminRepository.findBySchoolCode(trimmedSchoolCode)
                     .orElseThrow(() -> {
                         System.err.println("❌ Invalid School Code: [" + trimmedSchoolCode + "]");
-                        return new org.springframework.web.server.ResponseStatusException(
-                            org.springframework.http.HttpStatus.BAD_REQUEST, "Invalid School Code");
+                        return new ResponseStatusException(
+                            HttpStatus.BAD_REQUEST, "Invalid School Code");
                     });
             user.setAdmin(admin);
             System.out.println("✅ Found admin for school code: " + admin.getEmail());
         } else if (user.getAdmin() == null) {
             System.err.println("❌ Missing Admin context or School Code");
-            throw new org.springframework.web.server.ResponseStatusException(
-                    org.springframework.http.HttpStatus.UNAUTHORIZED,
+            throw new ResponseStatusException(
+                    HttpStatus.UNAUTHORIZED,
                     "Admin context or School Code required for student registration");
         }
 
         if (userRepository.findByEmail(user.getEmail()).isPresent()) {
             System.err.println("❌ Email already registered: " + user.getEmail());
-            throw new org.springframework.web.server.ResponseStatusException(
-                    org.springframework.http.HttpStatus.BAD_REQUEST, "Email already registered");
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST, "Email already registered");
         }
         user.setPassword(passwordService.encode(user.getPassword()));
         user.setRole("STUDENT"); // Standardize role

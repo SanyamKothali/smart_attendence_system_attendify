@@ -1,15 +1,7 @@
 package com.example.attendance_Backend.config;
 
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+// NOTE: The /uploads/** resource handler was previously duplicated here and in WebConfig.java.
+// It has been consolidated into WebConfig.java to avoid duplicate resource handler registration
+// which causes Spring Boot to serve incorrect or ambiguous static resources.
+// This file is intentionally left empty.
 
-@Configuration
-public class FileConfig implements WebMvcConfigurer {
-
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/uploads/**")
-                .addResourceLocations("file:uploads/");
-    }
-}
